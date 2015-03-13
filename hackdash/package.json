@@ -1,0 +1,39 @@
+{
+  "name": "hackdash",
+  "version": "1.0.0",
+  "description": "Fool Hackathon app for combining quote data with glassdoor data.",
+  "main": "local.js",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^3.1.0",
+    "q": "^1.2.0",
+    "request": "^2.53.0",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-shell": "^1.1.2"
+  },
+  "scripts": {
+    "test": "npm test",
+    "build": "browserify app/index.js > public/js/hackdash.js",
+    "watch": "watchify app/index.js -do public/js/hackdash.js -v",
+    "local": "nodemon local.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flinn/hackdash.git"
+  },
+  "keywords": [
+    "fool",
+    "hack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flinn/hackdash/issues"
+  },
+  "homepage": "https://github.com/flinn/hackdash"
+}
